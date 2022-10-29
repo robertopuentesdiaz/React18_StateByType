@@ -24,7 +24,7 @@ export default function ByRef() {
           <Title order={3} color="blue.5">
             State with Objects(Async?)
           </Title>
-          <Alert severity="info">{obj[0]}</Alert>
+          <Alert severity="success">{obj[0]}</Alert>
           <Button size="small" onClick={add} variant="contained">
             ADD COUNT
           </Button>
