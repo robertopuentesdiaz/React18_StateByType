@@ -10,7 +10,7 @@ export default function ByValue() {
 
   const add = () => {
     setCount((count) => {
-      console.log('inside 1:', count);
+      console.log('inside ', count);
       return count + 1;
     });
     console.log('outside :', count);
@@ -21,11 +21,12 @@ export default function ByValue() {
       console.log('inside 1:', count2);
       return count2 + 1;
     });
+    console.log('outside 1:', count2);
     await setCount2((count2) => {
-      console.log('inside 1:', count2);
+      console.log('inside 2:', count2);
       return count2 + 1;
     });
-    console.log('outside :', count2);
+    console.log('outside 2:', count2);
   };
 
   return (
