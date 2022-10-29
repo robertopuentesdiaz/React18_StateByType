@@ -37,7 +37,7 @@ export default function ByValue() {
           <Title order={3} color="blue.5">
             State with Primitives
           </Title>
-          <Alert severity="info">{count}</Alert>
+          <Alert severity="warning">{count}</Alert>
           <Button size="small" onClick={add} variant="contained">
             ADD COUNT
           </Button>
