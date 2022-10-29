@@ -21,7 +21,7 @@ export default function ByRef() {
       <Grid container spacing={2}>
         <Grid item xs={8}>
           <Button size="large" variant="text">
-            State with Objects
+            State with Objects(Async?)
           </Button>
           <Alert severity="info">{obj[0]}</Alert>
           <Button size="small" onClick={add} variant="contained">
