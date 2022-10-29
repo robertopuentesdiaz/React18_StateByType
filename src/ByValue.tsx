@@ -16,12 +16,12 @@ export default function ByValue() {
     console.log('outside :', count);
   };
 
-  const add2 = () => {
-    setCount2((count2) => {
+  const add2 = async () => {
+    await setCount2((count2) => {
       console.log('inside 1:', count2);
       return count2 + 1;
     });
-    setCount2((count2) => {
+    await setCount2((count2) => {
       console.log('inside 1:', count2);
       return count2 + 1;
     });
@@ -32,16 +32,20 @@ export default function ByValue() {
     <div>
       <Grid container spacing={2}>
         <Grid item xs={6}>
-          <h2>State with Primitives</h2>
+          <Button size="large" variant="text">
+            State with Primitives
+          </Button>
           <Alert severity="info">{count}</Alert>
-          <Button onClick={add} variant="contained">
+          <Button size="small" onClick={add} variant="contained">
             ADD COUNT
           </Button>
         </Grid>
         <Grid item xs={6}>
-          <h2>State with Primitives</h2>
+          <Button size="large" variant="text">
+            State with Primitives(Async?)
+          </Button>
           <Alert severity="info">{count2}</Alert>
-          <Button onClick={add2} variant="contained">
+          <Button size="small" onClick={add2} variant="contained">
             ADD COUNT
           </Button>
         </Grid>

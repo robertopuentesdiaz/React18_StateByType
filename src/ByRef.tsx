@@ -20,9 +20,11 @@ export default function ByRef() {
     <div>
       <Grid container spacing={2}>
         <Grid item xs={8}>
-          <h2>State with Objects</h2>
+          <Button size="large" variant="text">
+            State with Objects
+          </Button>
           <Alert severity="info">{obj[0]}</Alert>
-          <Button onClick={add} variant="contained">
+          <Button size="small" onClick={add} variant="contained">
             ADD COUNT
           </Button>
         </Grid>
