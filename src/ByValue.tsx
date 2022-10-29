@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
+import { Title } from '@mantine/core';
 
 export default function ByValue() {
   const [count, setCount] = useState(10);
@@ -33,18 +34,18 @@ export default function ByValue() {
     <div>
       <Grid container spacing={1}>
         <Grid item xs={6}>
-          <Button size="large" variant="text">
+          <Title order={3} color="blue.5">
             State with Primitives
-          </Button>
+          </Title>
           <Alert severity="info">{count}</Alert>
           <Button size="small" onClick={add} variant="contained">
             ADD COUNT
           </Button>
         </Grid>
         <Grid item xs={6}>
-          <Button size="large" variant="text">
+          <Title order={3} color="blue.5">
             State with Primitives(Async?)
-          </Button>
+          </Title>
           <Alert severity="info">{count2}</Alert>
           <Button size="small" onClick={add2} variant="contained">
             ADD COUNT
