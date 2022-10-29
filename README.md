@@ -1,3 +1,3 @@
 # React18_StateByType
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-3qacgi)
+Difference between save a Primitive and No Primitive StateFul Values on React
