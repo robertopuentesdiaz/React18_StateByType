@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { getRand } from './Utils';
+import Grid from '@mui/material/Grid';
 
 export default function ByRef() {
   const [noPrim, setNoPrim] = useState([10]);
@@ -8,10 +8,10 @@ export default function ByRef() {
   const add = () => {
     setNoPrim((noPrim) => {
       noPrim[0] += 1;
-      console.log('inside :', getRand(), noPrim);
+      console.log('inside :', noPrim);
       return [...noPrim];
     });
-    console.log('outside :', getRand(), noPrim);
+    console.log('outside :', noPrim);
   };
 
   return (

@@ -7,7 +7,7 @@ import ByValue from './ByValue';
 export default function App() {
   return (
     <div className="App">
-      <h1>STATE TEST</h1>
+      <h1>React State by Data types of ECMAScript</h1>
 
       <ByValue />
 
