@@ -1,26 +1,33 @@
 import * as React from 'react';
 import { useState } from 'react';
 import Grid from '@mui/material/Grid';
+import Alert from '@mui/material/Alert';
+import Button from '@mui/material/Button';
 
 export default function ByRef() {
-  const [noPrim, setNoPrim] = useState([10]);
+  const [obj, setObj] = useState([10]);
 
   const add = () => {
-    setNoPrim((noPrim) => {
-      noPrim[0] += 1;
-      console.log('inside :', noPrim);
-      return [...noPrim];
+    setObj((obj) => {
+      obj[0] += 1;
+      console.log('inside :', obj);
+      return [...obj];
     });
-    console.log('outside :', noPrim);
+    console.log('outside :', obj);
   };
 
   return (
     <div>
-      <h2>State with No Primitives</h2>
-      <h3>{noPrim[0]}</h3>
-      <h3>
-        <button onClick={add}>ADD COUNT</button>
-      </h3>
+      <Grid container spacing={2}>
+        <Grid item xs={8}>
+          <h2>State with Objects</h2>
+          <Alert severity="info">{obj[0]}</Alert>
+          <Button onClick={add} variant="contained">
+            ADD COUNT
+          </Button>
+        </Grid>
+        <Grid item xs={4}></Grid>
+      </Grid>
     </div>
   );
 }
