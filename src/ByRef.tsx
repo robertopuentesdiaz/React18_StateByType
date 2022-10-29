@@ -19,7 +19,7 @@ export default function ByRef() {
   return (
     <div>
       <Grid container spacing={2}>
-        <Grid item xs={8}>
+        <Grid item xs={12}>
           <Button size="large" variant="text">
             State with Objects(Async?)
           </Button>
@@ -28,7 +28,6 @@ export default function ByRef() {
             ADD COUNT
           </Button>
         </Grid>
-        <Grid item xs={4}></Grid>
       </Grid>
     </div>
   );
