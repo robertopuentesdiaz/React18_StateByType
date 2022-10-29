@@ -5,8 +5,8 @@ import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 
 export default function ByValue() {
-  const [count, setCount] = useState(0);
-  const [count2, setCount2] = useState(0);
+  const [count, setCount] = useState(10);
+  const [count2, setCount2] = useState(10);
 
   const add = () => {
     setCount((count) => {
