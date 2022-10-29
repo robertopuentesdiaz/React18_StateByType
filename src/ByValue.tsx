@@ -7,14 +7,14 @@ export default function ByValue() {
 
   const add = () => {
     setCount((count) => {
-      console.log('inside 1:', getRand(), count);
+      console.log('inside 1:', count);
       return count + 1;
     });
     // setCount((count) => {
-    //   console.log("inside 2:", getRand(), count);
+    //   console.log("inside 2:", count);
     //   return count + 1;
     // });
-    console.log('outside :', getRand(), count);
+    console.log('outside :', count);
   };
 
   return (
